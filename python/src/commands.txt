@@ -1,0 +1,5 @@
+# CREATE mysql container
+docker run -p 3308:3308 --name=mysql-auth -d mysql/mysql-server
+
+# Run server
+uvicorn server:server --reload
